@@ -17,10 +17,12 @@ public class ArrayUtility<SomeType> {
     }
 
     public SomeType findOddOccurringValue() {
+        for (SomeType t : array) if (getNumberOfOccurrences(t) % 2 != 0) return t;
         return null;
     }
 
     public SomeType findEvenOccurringValue() {
+        for (SomeType t : array) if (getNumberOfOccurrences(t) % 2 == 0) return t;
         return null;
     }
 
